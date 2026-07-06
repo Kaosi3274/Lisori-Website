@@ -243,6 +243,6 @@ document.querySelectorAll("[data-whatsapp-form]").forEach((form) => {
     });
 
     const message = encodeURIComponent(lines.join("\n"));
-    window.open(`https://wa.me/2349079076162?text=${message}`, "_blank", "noopener");
+    window.open(`https://wa.me/2347010002830?text=${message}`, "_blank", "noopener");
   });
 });
