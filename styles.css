@@ -1279,6 +1279,81 @@ img {
   line-height: 1.58;
 }
 
+.team-section {
+  padding-top: 92px;
+}
+
+.team-section .section-heading h2 {
+  line-height: 1.08;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.team-card {
+  overflow: hidden;
+  border: 1px solid rgba(23, 78, 162, 0.12);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(234, 243, 255, 0.96), rgba(255, 255, 255, 0.96) 58%, rgba(255, 243, 236, 0.86));
+  box-shadow: 0 22px 58px rgba(16, 32, 51, 0.12);
+}
+
+.team-photo {
+  height: clamp(300px, 32vw, 420px);
+  margin: 0;
+  overflow: hidden;
+  background: var(--navy);
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 360ms ease;
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.04);
+}
+
+.team-copy {
+  min-height: 190px;
+  padding: 24px;
+}
+
+.team-copy h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-family: "Darker Grotesque", "Inter", Arial, sans-serif;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 900;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.team-credentials,
+.team-role {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.team-credentials {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.team-role {
+  margin-top: 14px;
+  color: var(--coral);
+  font-weight: 900;
+}
+
 .our-work-preview {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.75fr);
@@ -1671,6 +1746,7 @@ img {
   .service-grid,
   .our-work-preview,
   .why-card-grid,
+  .team-grid,
   .trust-grid,
   .project-area-grid,
   .about-card-grid,
