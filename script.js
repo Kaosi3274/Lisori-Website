@@ -84,6 +84,6 @@ document.querySelectorAll("[data-email-form]").forEach((form) => {
 
     const subject = encodeURIComponent(`${formTitle} for LISORI LTD`);
     const body = encodeURIComponent(lines.join("\n"));
-    window.location.href = `mailto:manchikeson@yahoo.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:lisoriltd@gmail.com?subject=${subject}&body=${body}`;
   });
 });
